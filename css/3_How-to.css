@@ -1,0 +1,62 @@
+/* *********************** */
+/* SECTION 2 - HOW TO */
+/* *********************** */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: #f8d8bd;
+}
+
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: rgba(216, 144, 10, 0.616);
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* pour valider l'absolute enfant */
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  /*Position pour passer derrière */
+  position: absolute;
+  /* trick de centrage */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  z-index: -1;
+  /* height: 60%; NE FONCTIONNE PAS*/
+  width: 60%;
+  /* Trick du padding pour affichage */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+
+.step-img-box::after {
+  z-index: -1;
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #f8d8bd;
+
+}
