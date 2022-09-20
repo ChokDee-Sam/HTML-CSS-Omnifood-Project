@@ -39,7 +39,11 @@
         <!-- HEADER -->
         <header class="header">
             <!-- LOGO - LEFT SIDE -->
-            <img src="/img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+            <img
+                src="/img/omnifood-logo.png"
+                alt="Omnifood logo"
+                class="logo"
+            />
             <!-- NAVIGATION - RIGHT SIDE -->
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -750,13 +754,82 @@
                 </div>
             </div>
         </section>
+
+        <!-- SECTION CALL TO ACTION -->
+        <section class="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <!-- LEFT SIDE - TEXT -->
+                    <div class="cta-text-box">
+                        <!-- Accroche H2 -->
+                        <h2 class="heading-secondary">
+                            Get your first meal for free !
+                        </h2>
+                        <!-- texte -->
+                        <p class="cta-text">
+                            Healthy, tasty and hassle-free meals are waiting for
+                            you. Start eating well today. You can cancel or
+                            pause anytime. And the first meal is on us!
+                        </p>
+
+                        <!-- bloc de formulaire : 3 div (required) + 1 bouton -->
+                        <form class="cta-form" action="#">
+                            <!-- div 1 :  nom -->
+                            <div>
+                                <label for="full-name">Your Name</label>
+                                <input
+                                    id="full-name"
+                                    type="text"
+                                    placeholder="Sam Sam"
+                                    required
+                                />
+                            </div>
+
+                            <!-- div 2 :  mail -->
+                            <div>
+                                <label for="email">Email adress</label>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="me@example.com"
+                                    required
+                                />
+                            </div>
+
+                            <!-- Div 3 : question -->
+                            <div>
+                                <label for="select-where"
+                                    >Where did you hear from us ?</label
+                                >
+                                <select id="select-where" required>
+                                    <option value="">
+                                        Please choose one option :
+                                    </option>
+                                    <option value="friends">
+                                        Friends and family
+                                    </option>
+                                    <option value="youtube">
+                                        Youtube video
+                                    </option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value=" add">Facebook ad</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </div>
+
+                            <!-- Bouton -->
+                            <button class="btn btn--form">Sign up now</button>
+                        </form>
+                    </div>
+                    <div
+                        class="cta-img-box"
+                        role="img"
+                        aria-label="Woman enjoying food"
+                    ></div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
 
-<!-- .link: inline-block 
-
-: 
-: 
-: 
-
--->
+<!-- .link: inline-block -->
