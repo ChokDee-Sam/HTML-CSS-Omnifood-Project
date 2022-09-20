@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 55fr 45fr;
     align-items: center;
+
+    background-image: linear-gradient(white,#f8d8bd);
 }
 
 .testimonials-container {

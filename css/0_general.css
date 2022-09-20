@@ -6,7 +6,7 @@
 
 *:focus {
     outline: none;
-    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5) ;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 html {
@@ -54,7 +54,6 @@ strong {
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
-
     margin-bottom: 9.6rem;
 }
 
@@ -70,6 +69,9 @@ strong {
 }
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {

@@ -1,4 +1,7 @@
 .section-pricing {
+    background-image: linear-gradient(#f8d8bd,WHITE);
+
+    /* background-image: linear-gradient(#fdf2e9,WHITE); */
     padding: 9.6rem 0;
 }
 

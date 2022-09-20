@@ -4,7 +4,9 @@
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: #f8d8bd;
+  /* background-color: #f8d8bd; */
+
+  background-image: linear-gradient(white, #ff770052,WHITE);
 }
 
 .step-number {
