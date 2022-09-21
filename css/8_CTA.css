@@ -40,10 +40,16 @@
 .cta-img-box {
     background-image: linear-gradient(
             to right bottom,
+           rgb(209 209 209 / 35%),
+            rgb(203 197 191 / 35%)
+        ),
+        url(../img/eating.jpg);
+    /* background-image: linear-gradient(
+            to right bottom,
             rgba(235, 151, 78, 0.35),
             rgba(230, 125, 34, 0.35)
         ),
-        url(../img/eating.jpg);
+        url(../img/eating.jpg); */
     background-size: cover;
     background-position: center;
 }
@@ -66,8 +72,8 @@
 .cta-form select {
     width: 100%;
     padding: 1.2rem;
-    color: inherit;
-    font-size: 1.8rem;
+    color: #767676;
+    font-size: 1.6rem;
     font-family: inherit;
     border: none;
     background-color: #fdf2e9;
