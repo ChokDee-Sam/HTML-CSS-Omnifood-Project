@@ -22,17 +22,28 @@
     width: 6.4rem;
     border-radius: 50%;
     margin-bottom: 1.2rem;
+    box-shadow: 6px 4px 2px 0px rgba(132, 81, 5, 0.201);
+
 }
 
 .testimonial-text {
     font-size: 1.8rem;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 1.6rem;
+    color: #68503a;
+    color: hsla(29, 28%, 32%, 0.974);
+    color: #7e6044fb;
+    /* color: #49433d; */
+
+
 }
 
 .testimonial-name {
     font-size: 1.6rem;
-    color: #6f6f6f;
+    /* color: #6f6f6f; */
+    color: rgba(155, 120, 87, 0.866);
+    color: #7e60448c;
+
 }
 
 .gallery {
@@ -50,11 +61,13 @@
 .gallery-item img {
     display: block;
     width: 100%;
-    transition: all .4s;
+    transition: all .5s;
+    opacity: 50%;
 }
 
 .gallery-item img:hover {
     transform: scale(1.07);
+    opacity: 90%;
 
 
 }

@@ -6,17 +6,30 @@
     box-shadow: 0rem 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 1.1rem;
     overflow: hidden;
-    transition: all .4s ;
+    transition: all 0.4s;
+
+    box-shadow: 4px 4px 7px 4px rgba(54, 33, 2, 0.085);
+    box-shadow: 6px 6px 7px rgb(132 81 5 / 32%);
+    box-shadow: 6px 6px 7px rgb(132 81 5 / 10%);
+
 }
 
 .meal:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0rem 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-.6rem);
+    box-shadow: 0rem 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+
+    box-shadow: 12px 12px 15px 2px rgba(64, 50, 29, 0.072);
+    /* translate: -10px -0; */
+
+    scale: 1.02;
+    box-shadow: 16px 16px 7px rgb(132 81 5 / 32%);
+    box-shadow: 16px 16px 7px rgb(132 81 5 / 10%);
 
 }
 
 .meal-content {
-    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+    padding: 2.4rem 4.8rem 4.8rem 4.8rem;
+    /* background-color: #fdf2e9; */
 }
 
 .meal-tags {
@@ -47,11 +60,13 @@
 
 .meal-img {
     width: 100%;
+    opacity: 90%;
 }
 
 .meal-title {
     font-size: 2.4rem;
-    color: #333;
+    color: #444;
+
     font-weight: 600;
     margin-bottom: 3.2rem;
 }
@@ -88,6 +103,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    color: #68503a;
 }
 
 .list-icon {
@@ -97,7 +113,6 @@
 }
 
 .all-recipes {
-  text-align: center;
-  font-size: 1.8rem;
+    text-align: center;
+    font-size: 1.8rem;
 }
-

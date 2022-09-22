@@ -29,18 +29,31 @@
 .main-nav-link:link,
 .main-nav-link:visited {
     text-decoration: none;
-    color: #333;
+    /* color: #333; */
+    color: #4f4437e8;
+    color: #9b7857;
+
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
     /* display: inline-block; */
+
+
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-    color: #e67e22;
+    /* color: #e67e22; */
+    /* color: #b58d67; */
+    /* color: #9b7857; */
+    /* color: #55402d; */
+    /* color: #4f4437; */
+    color: #4f4437f2;
+
     /* color: white; */
 }
+
+
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
@@ -73,8 +86,7 @@
     background-color: #f3bf91;
     padding: 4.8rem 0 9.6rem 0;
 
-    background-image: linear-gradient(#f3bf91,WHITE);
-    
+    background-image: linear-gradient(#f3bf91, WHITE);
 }
 
 /* HERO --- SECTION - CONTAINER */
@@ -181,6 +193,8 @@
 /* HERO --- RIGHT SIDE */
 .hero-img {
     width: 100%;
+    opacity: 84%;
+
 }
 
 .delivered-meals {

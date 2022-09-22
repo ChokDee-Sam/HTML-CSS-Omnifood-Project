@@ -186,7 +186,8 @@
     transition: all 0.4s;
     /* box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1); */
 
-    box-shadow: 8px 8px 7px rgba(132, 81, 5, 0.316);
+    /* box-shadow: 8px 8px 7px rgba(132, 81, 5, 0.316); */
+    box-shadow: 6px 6px 7px rgba(132, 81, 5, 0.325);
 
     background-image: linear-gradient(to right bottom, #ff7700ec, #aa4f01);
     /* background-image: linear-gradient(
@@ -207,7 +208,8 @@
 
     /* box-shadow: 10px 10px 7px rgba(73, 38, 4, 0.204); */
 
-    box-shadow: 12px 12px 4px rgba(143, 74, 4, 0.206);
+    /* box-shadow: 12px 12px 4px rgba(143, 74, 4, 0.206); */
+    box-shadow: 10px 10px 10px rgba(73, 38, 4, 0.204);
 
     /* margin-left: 1rem; */
     translate: 0 -0.5rem;
