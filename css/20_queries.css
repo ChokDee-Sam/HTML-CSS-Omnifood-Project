@@ -1,0 +1,280 @@
+/* 
+Dans les Media-Queries :
+REM and EM ne dépendent pas du HTML font-size 
+
+Ce qui donne :
+1rem = 1em = 16px
+
+De plus, on n'utilise pas REM car il bug souvent
+On utilise donc EM
+
+Et pour trouver le nombre EM, on divise notre taille par 16px
+1350px / 16px = 84em (on arrondi)
+*/
+
+/****************************/
+/* Below 1344px (Smaller desktop) */
+/****************************/
+/*      1344px / 16px = 84      */
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .img-none {
+        display: none;
+    } */
+}
+
+/****************************/
+/* Below 1200px  (Tablet - Landscape) */
+/****************************/
+/*      1200px /9px = 75     */
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+    /*      
+        On sait que de base, avec un html à 62.5%, ça nous donne 10px, donc 1rem
+        Alors on baisse d'une unité de mesure pour baisser globalement toute notre page
+
+        Ça nous donne donc 9, qu'on divise par la taille initiale des navigateurs de 16px
+        Et on obtient donc notre pourcentage
+
+        9px / 16px = 0,5625       */
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    .testimonials-container {
+        padding: 9.6rem 3.2rem;
+    }
+}
+
+/****************************/
+/* BUTTON CSS BURGER */
+/****************************/
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    /* on va le rendre visible sur un affichage mobile */
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/****************************/
+/* Below 964px  (Tablet - Landscape) */
+/****************************/
+
+
+
+/*      964px /16px = 60,25     */
+@media (max-width: 60em) {
+    /* 8px / 16px = 0.50 */
+    html {
+        font-size: 50%;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 0 8rem;
+
+        gap: 6.4rem;
+    }
+
+    .hero-img {
+        width: 60%;
+    }
+
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .logos img {
+        height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+
+        /* ***********************/
+    /* MOBILE AFFICHAGE */
+    /* ***********************/
+    .btn-mobile-nav {
+        display: block;
+        /* le menu est en position 1, au dessus de l'opacité de l'img, donc lui sera 2 */
+        z-index: 2;
+    }
+
+    .main-nav {
+        /* background-image: linear-gradient(white,#f3bf91, #f3bf91,#f3bf91); */
+        /* background-image: radial-gradient(#ffc28e,#e49c5d); */
+        background-color: #f3bf91;
+        /* pas besoin de definir le parent, car on veut qu'il soit au dessus de tout */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        /* transform: translateX(100%); */
+
+        /* Flex pour centrer le bloc d'ensemble */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* transition: all 1s ease; */
+
+        /* pour éviter le conflit avec l'image Hero 80% opacity */
+        z-index: 1;
+
+        /* le display none ne permet pas de transitions */
+        /* display: none; */
+
+        /* 1 HIDE IT ! opacity permet une transition */
+        /* opacity: 0; */
+        /* 2 - MAKE IT UNACCESSIBLE to mouse and keyboard */
+        /* pointer-events: none; */
+        /* 3 - HIT IT FROM SCREEN READERS */
+        /* visibility: hidden; */
+    }
+
+    .nav-open .main-nav {
+        /* opacity: 1;
+        pointer-events: auto;
+        visibility: visible; */
+
+    }
+
+    /* Permet de switcher entre l'open et close MENU */
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        /* display: block; */
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        /* display: none; */
+    }
+
+    .main-nav-list {
+        /* on change la direction et l'espace entre chaque */
+        flex-direction: column;
+        gap: 7.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+        color: #9b7857;
+
+        /* color: #fdf2e9; */
+        /* color: #9b7857; */
+        /* text-shadow: #bf8f67c3 1px 1px 3px ; */
+        text-shadow: #d2d0d0 1px 1px 5px ;
+    }
+
+    .main-nav-link:hover,
+    .main-nav-link:hover {
+        color: #fdf2e9;
+        color: #92603a;
+        /* text-shadow: #bf8f6796 7px 6px 4px  ; */
+
+    }
+    .btn-1 {
+        font-size: 3rem;
+    }
+
+
+}
+
+/* 
+- Typography System (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 
+30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+ 
+- Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 
+64 / 80 / 96 / 128
+ */
+
+/*     
+ .btn-3:link,
+    .btn-3:visited {
+        margin-right: 0;
+        padding: 1.6rem 2.2rem;
+    }
+    .btn-2:link,
+    .btn-2:visited {
+        margin-right: 2rem;
+        padding: 1.6rem 2.2rem;
+    }
+ */

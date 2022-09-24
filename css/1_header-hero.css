@@ -20,14 +20,15 @@
 /* HEADER --- NAVIGATION */
 
 .main-nav-list {
-    display: flex;
-    gap: 3.2rem;
-    align-items: center;
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+    display: inline-block;
     text-decoration: none;
     /* color: #333; */
     color: #4f4437e8;
@@ -36,9 +37,6 @@
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
-    /* display: inline-block; */
-
-
 }
 
 .main-nav-link:hover,
@@ -52,8 +50,6 @@
 
     /* color: white; */
 }
-
-
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
@@ -194,7 +190,6 @@
 .hero-img {
     width: 100%;
     opacity: 84%;
-
 }
 
 .delivered-meals {

@@ -99,7 +99,7 @@
 /*  */
 .btn-2:link,
 .btn-2:visited {
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 
     text-decoration: none;
     font-size: 2rem;
@@ -138,7 +138,7 @@
 /*  */
 .btn-2a:link,
 .btn-2a:visited {
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 
     text-decoration: none;
     font-size: 2rem;
@@ -167,7 +167,7 @@
     box-shadow: 10px 10px 7px rgba(228, 119, 11, 0.305);
 
     margin-left: 1rem;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     color: #e67e22;
 }
 
@@ -176,7 +176,7 @@
 /*  */
 .btn-3:link,
 .btn-3:visited {
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 
     text-decoration: none;
     font-size: 2rem;
