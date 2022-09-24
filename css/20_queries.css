@@ -12,6 +12,16 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
 1350px / 16px = 84em (on arrondi)
 */
 
+@media (max-width: 100em) {
+    .section-hero {
+        padding: 4.8rem 9.6rem 9.6rem 9.6rem;
+    }
+
+    .hero {
+        padding: 0;
+    }
+}
+
 /****************************/
 /* Below 1344px (Smaller desktop) */
 /****************************/
@@ -24,13 +34,13 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .heading-primary {
         font-size: 4.4rem;
     }
-    .gallery {
+    /* .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .img-none {
+     .img-none {
         display: none;
-    } */
+    }  */
 }
 
 /****************************/
@@ -58,9 +68,9 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         font-size: 2.4rem;
     }
 
-    .grid {
+    /* .grid {
         column-gap: 4.8rem;
-    }
+    } */
 
     .header {
         padding: 0 3.2rem;
@@ -74,7 +84,15 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     .testimonials-container {
-        padding: 9.6rem 3.2rem;
+        padding: 9.6rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 9.6rem 0 0;
+    }
+
+    .img-none {
+        display: none;
     }
 }
 
@@ -111,11 +129,14 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     html {
         font-size: 50%;
     }
+
+    .logos img {
+        height: 2.4rem;
+    }
+
     .hero {
         grid-template-columns: 1fr;
-
-        padding: 0 8rem;
-
+        padding: 0 9.6rem;
         gap: 6.4rem;
     }
 
@@ -133,16 +154,25 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         margin-top: 3.2rem;
     }
 
-    .logos img {
-        height: 2.4rem;
+    .container {
+        max-width: 110rem;
+        padding: 0 9.6rem;
     }
 
-    .step-number {
-        font-size: 7.4rem;
+    .section-how .step-img {
+        width: 40%;
+    }
+
+    .section-meals .container:nth-child(2) {
+        max-width: 120rem;
+    }
+
+    .section-meals .grid:nth-child(2) {
+        column-gap: 4.8rem;
     }
 
     .meal-content {
-        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+        padding: 2.4rem;
     }
 
     .section-testimonials {
@@ -150,6 +180,22 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
     .gallery {
         grid-template-columns: repeat(6, 1fr);
+        padding: 1.6rem;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+    .section-pricing .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-pricing .container:nth-child(4) {
+        max-width: 100rem;
+    }
+    .section-pricing .grid:nth-child(4) {
+        row-gap: 6.4rem;
+        column-gap: 9.6rem;
     }
 
     .cta {
@@ -165,8 +211,38 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         margin-top: 1.2rem;
     }
 
+    footer .container {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    }
+
+    footer .logo-col {
+        margin-right: 2.4rem;
+    }
+
+    .footer .grid:nth-child(1) {
+        column-gap: 3.2rem;
+    }
+
+    .footer-link:link,
+    .footer-link:visited {
+        box-shadow: none;
+    }
+    .footer-link:hover,
+    .footer-link:active {
+        box-shadow: none;
+    }
+
+    .footer-nav {
+        gap: 1.6rem;
+    }
+
+    /* ***********************/
+    /* ***********************/
     /* ***********************/
     /* MOBILE AFFICHAGE */
+    /* ***********************/
+    /* ***********************/
     /* ***********************/
     .btn-mobile-nav {
         display: block;
@@ -243,6 +319,84 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
     .btn-1 {
         font-size: 3rem;
+    }
+}
+/* 
+
+ */
+/*  */
+/* 
+  */
+/* 848px */
+@media (max-width: 53em) {
+    .section-how .step-img {
+        width: 45%;
+    }
+
+    .section-meals .list {
+        gap: 1.2rem;
+    }
+
+    .meal-content {
+        padding: 1.6rem 0.8rem;
+    }
+
+    .section-pricing li {
+        line-height: 1.4;
+    }
+
+    .grid--5-cols {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .adress-col {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .logo-col-special {
+        display: block;
+        grid-column: 6 / 7;
+    }
+    .logo-col-special .social-links {
+        /* justify-content: space-between; */
+        flex-direction: column;
+        /* gap: 3rem; */
+        align-self: stretch;
+        
+    }
+
+    .nav-col {
+        grid-column: span 2;
+    }
+
+    footer .container {
+        padding-left: 9.6rem;
+        padding-right: 9.6rem;
+    }
+
+    footer .grid {
+        row-gap: 8rem;
+    }
+
+    footer .logo-col {
+        margin-right: 0;
+    }
+
+    .logo-col-special {
+        display: block;
+    }
+}
+
+/* 768px */
+@media (max-width: 48em) {
+    .section-how .step-img {
+        width: 50%;
     }
 }
 
