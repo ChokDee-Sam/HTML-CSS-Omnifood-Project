@@ -13,6 +13,7 @@ html {
     font-size: 62.5%;
     /*      Ce qui donne 10px pour faire plus simple
         et donc 1rem = 10px              */
+    overflow-x: hidden;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
-    overflow-x: hidden;
 }
 
 strong {

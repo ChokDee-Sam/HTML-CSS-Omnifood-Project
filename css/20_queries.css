@@ -105,8 +105,6 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
 /* Below 964px  (Tablet - Landscape) */
 /****************************/
 
-
-
 /*      964px /16px = 60,25     */
 @media (max-width: 60em) {
     /* 8px / 16px = 0.50 */
@@ -167,7 +165,7 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         margin-top: 1.2rem;
     }
 
-        /* ***********************/
+    /* ***********************/
     /* MOBILE AFFICHAGE */
     /* ***********************/
     .btn-mobile-nav {
@@ -187,14 +185,14 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         width: 100%;
         height: 100vh;
 
-        /* transform: translateX(100%); */
+        transform: translateX(100%);
 
         /* Flex pour centrer le bloc d'ensemble */
         display: flex;
         align-items: center;
         justify-content: center;
 
-        /* transition: all 1s ease; */
+        transition: all 0.5s ease-in-out;
 
         /* pour éviter le conflit avec l'image Hero 80% opacity */
         z-index: 1;
@@ -203,26 +201,26 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         /* display: none; */
 
         /* 1 HIDE IT ! opacity permet une transition */
-        /* opacity: 0; */
+        opacity: 0;
         /* 2 - MAKE IT UNACCESSIBLE to mouse and keyboard */
-        /* pointer-events: none; */
+        pointer-events: none;
         /* 3 - HIT IT FROM SCREEN READERS */
-        /* visibility: hidden; */
+        visibility: hidden;
     }
 
     .nav-open .main-nav {
-        /* opacity: 1;
+        opacity: 1;
         pointer-events: auto;
-        visibility: visible; */
-
+        visibility: visible;
+        transform: translateX(0);
     }
 
     /* Permet de switcher entre l'open et close MENU */
     .nav-open .icon-mobile-nav[name="close-outline"] {
-        /* display: block; */
+        display: block;
     }
     .nav-open .icon-mobile-nav[name="menu-outline"] {
-        /* display: none; */
+        display: none;
     }
 
     .main-nav-list {
@@ -235,25 +233,17 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .main-nav-link:visited {
         font-size: 3rem;
         color: #9b7857;
-
-        /* color: #fdf2e9; */
-        /* color: #9b7857; */
-        /* text-shadow: #bf8f67c3 1px 1px 3px ; */
-        text-shadow: #d2d0d0 1px 1px 5px ;
+        text-shadow: #d2d0d0 1px 1px 5px;
     }
 
     .main-nav-link:hover,
     .main-nav-link:hover {
         color: #fdf2e9;
         color: #92603a;
-        /* text-shadow: #bf8f6796 7px 6px 4px  ; */
-
     }
     .btn-1 {
         font-size: 3rem;
     }
-
-
 }
 
 /* 
@@ -264,17 +254,4 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
 - Spacing System (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 
 64 / 80 / 96 / 128
- */
-
-/*     
- .btn-3:link,
-    .btn-3:visited {
-        margin-right: 0;
-        padding: 1.6rem 2.2rem;
-    }
-    .btn-2:link,
-    .btn-2:visited {
-        margin-right: 2rem;
-        padding: 1.6rem 2.2rem;
-    }
  */
