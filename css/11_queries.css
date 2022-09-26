@@ -20,6 +20,21 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .hero {
         padding: 0;
     }
+
+    /* .container {
+        max-width: 110rem;
+        padding: 0 9.6rem;
+    }
+.section-meals .container:nth-child(2) {
+        max-width: 120rem;
+    }
+ .section-pricing .container:nth-child(4) {
+        max-width: 100rem;
+    }
+    footer .container {
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+    } */
 }
 
 /****************************/
@@ -95,7 +110,20 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         display: none;
     }
 }
-
+/****************************/
+/* Below 1024px  (Tablet - Landscape) */
+/****************************/
+/*      1200px /16px = 64     */
+@media (max-width: 64em) {
+    .btn-2:link,
+    .btn-2:visited {
+        padding: 1.6rem 2rem;
+    }
+    .btn-3:link,
+    .btn-3:visited {
+        padding: 1.6rem 2rem;
+    }
+}
 /****************************/
 /* BUTTON CSS BURGER */
 /****************************/
@@ -138,6 +166,12 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         grid-template-columns: 1fr;
         padding: 0 9.6rem;
         gap: 6.4rem;
+    }
+
+    .section-hero,
+    .section-how,
+    .section-meals {
+        padding-bottom: 8rem;
     }
 
     .hero-img {
@@ -329,6 +363,9 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
   */
 /* 848px */
 @media (max-width: 53em) {
+    .hero {
+        padding: 0;
+    }
     .section-how .step-img {
         width: 45%;
     }
@@ -350,25 +387,31 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     .logo-col {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+    }
+
+    .adress-col {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
     }
 
-    .adress-col {
-        grid-column: 3 / 5;
-        grid-row: 2 / 3;
+    .visible {
+        display: none;
     }
 
     .logo-col-special {
         display: block;
-        grid-column: 6 / 7;
+        grid-column: 5 / 7;
+        align-self: flex-end;
+        justify-self: start;
     }
     .logo-col-special .social-links {
         /* justify-content: space-between; */
-        flex-direction: column;
+        /* flex-direction: column; */
         /* gap: 3rem; */
         align-self: stretch;
-        
     }
 
     .nav-col {
@@ -381,7 +424,7 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     footer .grid {
-        row-gap: 8rem;
+        row-gap: 7rem;
     }
 
     footer .logo-col {
@@ -393,10 +436,233 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 }
 
-/* 768px */
+/* 768px IPAD */
 @media (max-width: 48em) {
+    .logos img {
+        height: 2.2rem;
+    }
+
     .section-how .step-img {
         width: 50%;
+    }
+}
+
+/* 752px */
+@media (max-width: 47em) {
+    .heading-secondary {
+        margin-bottom: 6.4rem;
+    }
+
+    .section-meals .grid--3-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-meals .grid {
+        /* row-gap: ; */
+    }
+
+    .section-meals .grid:nth-child(2) {
+        column-gap: 6.4rem;
+    }
+
+    .section-meals .diets {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+}
+
+/* 672px */
+@media (max-width: 42em) {
+    .section-hero .container {
+    }
+    .section-featured .container {
+        padding: 0 3.2rem;
+    }
+    .section-how .step-img {
+        width: 55%;
+    }
+
+    .section-pricing .container:nth-child(2) {
+        max-width: 110rem;
+        padding: 0 4.8rem;
+    }
+
+    /* .section-pricing h2 {
+        padding-left: 9.6rem;
+    } */
+
+    .section-pricing .grid {
+        column-gap: 4.8rem;
+    }
+/*  */
+.section-cta .container {
+    padding: 3.2rem;
+}
+    .cta {
+        grid-template-columns: 1fr;
+    }
+.cta-img-box, .cta-text-box {
+    grid-column: span 1;
+}
+    .cta-text-box {
+        grid-column: 1 / -1;
+        grid-row: 2 /3;
+        
+    }
+
+    .cta-img-box {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        height: 36rem;
+    }
+}
+
+/* 592px  PHONES */
+@media (max-width: 37em) {
+    .container,
+    .testimonials-container {
+        padding: 0 4.8rem;
+    }
+
+    /* section Hero */
+    .section-hero {
+        padding: 3.2rem;
+    }
+
+    .btn-2 {
+        margin-right: 1.6rem;
+    }
+
+    .btn-3 {
+        margin-top: 1.2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    /* section Featured */
+    .logos img {
+        height: 1.2rem;
+    }
+
+    /* section How */
+    .section-how .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-how .step-img {
+        width: 45%;
+        transform: translateY(3.2rem);
+    }
+    .section-how .grid {
+        row-gap: 6.2rem;
+    }
+    .section-how .container:nth-child(2) .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+    .section-how .container:nth-child(2) .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    /* section Meals */
+
+    .meal-title {
+        font-size: 3rem;
+    }
+
+    .meal-content {
+        padding: 4.8rem;
+    }
+    .meal-title {
+        font-size: 3.2rem;
+    }
+    .meal-icon {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+    .meal-attribute {
+        font-size: 2rem;
+    }
+
+    .tag {
+        font-size: 1.6rem;
+    }
+
+    .meal {
+        column-gap: span 1;
+    }
+    .section-meals .grid:nth-child(2) {
+        column-gap: 0;
+    }
+    .section-meals .grid:nth-child(2) .meal:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .section-meals .grid:nth-child(2) .meal:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .diets {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .section-meals .grid--3-cols {
+        grid-template-columns: 1fr;
+    }
+
+    /* section Testimonials */
+    .section-testimonials .testimonials {
+        grid-template-columns: 1fr;
+    }
+    .testimonials-container {
+        padding: 4.8rem;
+    }
+
+.gallery {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.img-none {
+    display: block;
+}
+
+.gallery-item img, .meal-img {
+
+    opacity: 90%;
+}
+
+
+
+/* section Pricing */
+    .section-pricing .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-pricing .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid--5-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-col {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: flex-end;
+    }
+
+    footer .container .adress-col:nth-child(2) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .logo-col,
+    .logo-col-special,
+    .adress-col,
+    .nav-col {
+        grid-column: span 1;
     }
 }
 

@@ -32,11 +32,13 @@
 }
 
 .copyright {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4rem;
     color: #767676;
     /* pour decaler vers le bas du bloc flex */
     margin-top: auto;
+    margin-bottom: 4px;
+
 }
 
 .footer-heading {
@@ -61,7 +63,7 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    gap: 4.6rem;
+    gap: 2rem;
 
     color: #767676;
 }
