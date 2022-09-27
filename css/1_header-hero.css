@@ -12,7 +12,7 @@
     height: 9.6rem;
     padding: 0 4.8rem;
 
-    position : relative
+    position: relative;
     /*  relative par rapport à la .main-nav > positon : absolute*/
 }
 
@@ -69,6 +69,31 @@
     background-color: white;
     scale: 1.1;
 }
+
+/* HEADER --- STICKY NAV */
+.sticky .header {
+    /* tout comme la position absolute, la position fixed retire l'element du flux */
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 9rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: #f3bf91;
+    box-shadow: 1px 6px 10px rgba(77, 33, 4, 0.123);
+}
+
+.sticky .section-hero {
+    margin-top: 9rem;
+}
+
+/* .more-padding {
+    
+} */
 
 /* *********************** */
 /* HERO SECTION  */
