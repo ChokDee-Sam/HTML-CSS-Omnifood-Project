@@ -35,6 +35,11 @@
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
 
+        <script
+            defer
+            src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+        ></script>
+
         <script defer src="/js/script.js"></script>
 
         <title>Omnifood</title>
@@ -54,12 +59,20 @@
             <!-- NAVIGATION - RIGHT SIDE -->
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a class="main-nav-link" href="#">How it works</a></li>
-                    <li><a class="main-nav-link" href="#">Meals</a></li>
-                    <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                    <li><a class="main-nav-link" href="#">Pricing</a></li>
                     <li>
-                        <a class="btn-base btn-1" href="#">Your free meal</a>
+                        <a class="main-nav-link" href="#how">How it works</a>
+                    </li>
+                    <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                    <li>
+                        <a class="main-nav-link" href="#testimonials"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="btn-base btn-1" href="#cta">Your free meal</a>
                         <!-- <a class="main-nav-link nav-cta btn-1" href="#"
                             >Your free meal</a
                         > -->
@@ -78,7 +91,6 @@
                     name="close-outline"
                 ></ion-icon>
             </button>
-             
         </header>
 
         <main>
@@ -110,10 +122,10 @@
                         <!--  -->
                         <!-- 2 Buttons D'ESSAIS-->
 
-                        <a href="#" class="btn btn-2 margin-right-3rem"
+                        <a href="#how" class="btn btn-2 margin-right-3rem"
                             >Learn more &darr;</a
                         >
-                        <a href="#" class="btn btn-3">Start eating well</a>
+                        <a href="#cta" class="btn btn-3">Start eating well</a>
 
                         <!-- <a href="#" class="btn-base btn-1"
                     >Start eating well</a
@@ -194,7 +206,7 @@
             </section>
 
             <!-- SECTION HOW TO -->
-            <section class="section-how">
+            <section class="section-how" id="how">
                 <div class="container">
                     <span class="subheading">How it works</span>
                     <h2 class="heading-secondary">
@@ -276,7 +288,7 @@
             </section>
 
             <!-- SECTION MEALS -->
-            <section class="section-meals">
+            <section class="section-meals" id="meals">
                 <div class="container center-text">
                     <span class="subheading">Meals</span>
                     <h2 class="heading-secondary">
@@ -457,7 +469,7 @@
             </section>
 
             <!-- SECTION TESTIMONIALS -->
-            <section class="section-testimonials">
+            <section class="section-testimonials" id="testimonials">
                 <!-- LEFT SIDE : Testimonials -->
                 <div class="testimonials-container">
                     <!-- titre + accroche -->
@@ -619,7 +631,7 @@
             </section>
 
             <!-- SECTION PRICING -->
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
                 <div class="container">
                     <!-- Theme -->
                     <span class="subheading">Pricing</span>
@@ -815,7 +827,7 @@
             </section>
 
             <!-- SECTION CALL TO ACTION -->
-            <section class="section-cta">
+            <section class="section-cta" id="cta">
                 <div class="container">
                     <div class="cta">
                         <!-- LEFT SIDE - TEXT -->
@@ -936,8 +948,8 @@
                     </ul>
 
                     <p class="copyright">
-                        Copyright &copy; 2022 by Omnifood, Inc.  All rights
-                        reserved.
+                        Copyright &copy; <span class="year">2300</span> by
+                        Omnifood, Inc. All rights reserved.
                     </p>
                 </div>
 
@@ -946,7 +958,8 @@
                     <p class="footer-heading">Contact us</p>
                     <address class="contacts">
                         <p class="adress">
-                            623 Harrison Street,  2nd Floor <br>  San Francisco,  CA 94107
+                            623 Harrison Street, 2nd Floor <br />
+                            San Francisco, CA 94107
                         </p>
                         <p>
                             <a class="footer-phone-mail" href="tel:415-201-6370"
@@ -1013,8 +1026,6 @@
 
                 <!-- 6eme colonne speciale -->
                 <div class="logo-col-special">
-                    
-
                     <ul class="social-links">
                         <li>
                             <a class="logo-link" href="#"
@@ -1041,8 +1052,6 @@
                             ></a>
                         </li>
                     </ul>
-
-                    
                 </div>
             </div>
         </footer>

@@ -14,6 +14,10 @@ html {
     /*      Ce qui donne 10px pour faire plus simple
         et donc 1rem = 10px              */
     overflow-x: hidden;
+    
+    /* does not work on Safari browser */
+    scroll-behavior: smooth;
+
 }
 
 body {
