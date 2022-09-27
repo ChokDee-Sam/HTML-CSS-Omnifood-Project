@@ -1,0 +1,61 @@
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+/* Section Meals */
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 2em;
+}
+
+/* .no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+} */
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+/* Footer */
+/* .no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+} */
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 1.1rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+/****************************/
+/* 1200px */
+/****************************/
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+/****************************/
+/* 960px */
+/****************************/
+@media (max-width: 60em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 7.8rem;
+  }
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
