@@ -13,9 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Favicon -->
-        <link rel="icon" href="/img/favicon-mini.png">
-        <link rel="apple-touch-icon" href="img/Apple-touch-icon.png">
-        <link rel="manifest" href="manifest.webmanifest">
+        <link rel="icon" href="/img/favicon-mini.png" />
+        <link rel="apple-touch-icon" href="img/Apple-touch-icon.png" />
+        <link rel="manifest" href="manifest.webmanifest" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -128,23 +128,10 @@
                             personal tastes and nutritional needs.
                         </p>
 
-                        <!-- 2 Buttons -->
-                        <!-- <a href="#" class="btn btn--full margin-right-sm"
-                        >Start eating well</a
-                    >
-                    <a href="#" class="btn btn--outline">Learn more &darr;</a> -->
-
-                        <!--  -->
-                        <!-- 2 Buttons D'ESSAIS-->
-
                         <a href="#how" class="btn btn-2 margin-right-3rem"
                             >Learn more &darr;</a
                         >
                         <a href="#cta" class="btn btn-3">Start eating well</a>
-
-                        <!-- <a href="#" class="btn-base btn-1"
-                    >Start eating well</a
-                > -->
 
                         <!--  -->
                         <!-- Photos Customers + Text -->
@@ -183,13 +170,20 @@
 
                     <!-- CONTAINER : RIGHT SIDE -->
                     <div class="hero-img-box">
-                        <img
-                            src="/img/hero.png"
-                            class="hero-img"
-                            alt="Woman enjoying food, meals in storage container, 
-            and food bowls on a table
-            "
-                        />
+                        <picture>
+                            <source srcset="img/hero.webp" type="image/webp" />
+                            <source
+                                srcset="img/hero-min.png"
+                                type="image/png"
+                            />
+
+                            <img
+                                src="/img/hero.webp"
+                                class="hero-img"
+                                alt="Woman enjoying food, meals in storage container, 
+                                        and food bowls on a table "
+                            />
+                        </picture>
                     </div>
                 </div>
             </section>
