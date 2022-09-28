@@ -853,7 +853,7 @@
                             </p>
 
                             <!-- bloc de formulaire : 3 div (required) + 1 bouton -->
-                            <form class="cta-form" action="#">
+                            <form class="cta-form" name="sign-up" netlify>
                                 <!-- div 1 :  nom -->
                                 <div>
                                     <label for="full-name">Your Name</label>
@@ -861,6 +861,7 @@
                                         id="full-name"
                                         type="text"
                                         placeholder="Sam Sam"
+                                        name="full-name"
                                         required
                                     />
                                 </div>
@@ -872,6 +873,7 @@
                                         id="email"
                                         type="email"
                                         placeholder="me@example.com"
+                                        name="email"
                                         required
                                     />
                                 </div>
@@ -881,9 +883,13 @@
                                     <label for="select-where"
                                         >Where did you hear from us ?</label
                                     >
-                                    <select id="select-where" required>
+                                    <select
+                                        id="select-where"
+                                        name="select-where"
+                                        required
+                                    >
                                         <option value="">
-                                            Please choose one option :
+                                            Please choose :
                                         </option>
                                         <option value="friends">
                                             Friends and family
