@@ -486,17 +486,27 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         padding: 0 4.8rem;
     }
 
-    /* .section-pricing h2 {
-        padding-left: 9.6rem;
-    } */
+    /* section Pricing */
+.section-pricing {
+    padding-bottom: 3.2rem;
+}
+
+.section-pricing .container:nth-child(3) {
+    margin-bottom: 6.4rem;
+}
 
     .section-pricing .grid {
         column-gap: 4.8rem;
     }
-    /*  */
+    /* section CTA */
+    .section-cta {
+        padding-bottom: 2.4rem;
+    }
     .section-cta .container {
         padding: 3.2rem;
     }
+
+    /* Section CTA */
     .cta {
         grid-template-columns: 1fr;
     }
@@ -541,11 +551,16 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     /* section Featured */
+    
     .logos img {
         height: 1.2rem;
     }
-
+    
     /* section How */
+    .section-how {
+        padding-top: 6.4rem;
+    }
+    
     .section-how .grid--2-cols {
         grid-template-columns: 1fr;
     }
@@ -577,7 +592,7 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .meal-content {
         padding: 4.8rem;
     }
- 
+
     .meal-icon {
         height: 3.2rem;
         width: 3.2rem;
@@ -585,8 +600,6 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .meal-attribute {
         font-size: 2rem;
     }
-
- 
 
     .meal {
         column-gap: span 1;
@@ -633,18 +646,29 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     /* section Pricing */
+
+
     .section-pricing .grid--2-cols {
         grid-template-columns: 1fr;
     }
+
+    /* .section-pricing .container:nth-child(3) {
+        margin-bottom: 6.4rem;
+    } */
 
     .section-pricing .grid--4-cols {
         grid-template-columns: 1fr;
     }
 
+/* section CTA */
+
+
+
+    /* Section Footer */
     .grid--5-cols {
         grid-template-columns: 1fr 1fr;
     }
-
+    
     .logo-col {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
@@ -663,7 +687,6 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
         grid-column: span 1;
     }
 
-    /* Section Footer */
     footer .container {
         padding-left: 4.8rem;
         padding-right: 4.8rem;
@@ -675,15 +698,27 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     .meal-title {
         font-size: 2.8rem;
     }
+
+.section-how {
+    padding-bottom: 6.4rem;
 }
+
+}
+
 
 /* 336px */
 @media (max-width: 21em) {
-
     .btn-2 {
         margin-right: 0;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
+
+/* section featured */
+.section-featured .container {
+    padding:  1.2rem;
+}
+
+    /* section footer */
     .footer .grid:nth-child(1) {
         column-gap: 1.2rem;
     }
@@ -696,7 +731,8 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
 /* 320px */
 @media (max-width: 20em) {
     /* Pricing */
-    .pricing-plan--starter, .pricing-plan--complete {
+    .pricing-plan--starter,
+    .pricing-plan--complete {
         padding: 5.3rem 3.2rem;
     }
 
@@ -736,7 +772,7 @@ Et pour trouver le nombre EM, on divise notre taille par 16px
     }
 
     .footer {
-        padding: 0rem 2.8rem 6.4rem 2.8rem;
+        padding: 3.2rem 2.8rem 6.4rem 2.8rem;
     }
 }
 
