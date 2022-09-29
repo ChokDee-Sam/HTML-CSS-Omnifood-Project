@@ -58,6 +58,10 @@ allLinks.forEach(function (link) {
         // Close mobile navigation
         if (link.classList.contains("main-nav-link"))
             headerEl.classList.toggle("nav-open");
+
+        // Close mobile navigation
+        if (link.classList.contains("btn-base"))
+            headerEl.classList.toggle("nav-open");
     });
 });
 
@@ -73,7 +77,7 @@ const obs = new IntersectionObserver(
         if (ent.isIntersecting === false) {
             document.body.classList.add("sticky");
         }
-            if (ent.isIntersecting === true) {
+        if (ent.isIntersecting === true) {
             document.body.classList.remove("sticky");
         }
     },
